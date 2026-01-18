@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="md_theme_primary">#6750A4</color>
+    <color name="md_theme_surface">#FFFBFE</color>
+    <color name="md_theme_onSurface">#1C1B1F</color>
+    <color name="card_green">#2E7D32</color>
+    <color name="card_orange">#EF6C00</color>
+    <color name="card_blue">#1565C0</color>
+    <color name="card_red">#C62828</color>
+    <color name="legend1">#8E24AA</color>
+    <color name="legend2">#3949AB</color>
+    <color name="legend3">#00897B</color>
+    <color name="legend4">#F4511E</color>
+    <color name="legend5">#6D4C41</color>
+    <color name="legend6">#2E7D32</color>
+
+    <!-- Added missing color definitions -->
+    <color name="btnAdd">#4CAF50</color>      <!-- Example: A nice green -->
+    <color name="btnSettings">#2196F3</color> <!-- Example: A standard blue -->
+    <color name="btnChart">#FFC107</color>    <!-- Example: An amber/yellow -->
+    <color name="btnLogout">#F44336</color>   <!-- Example: A distinct red -->
+</resources>

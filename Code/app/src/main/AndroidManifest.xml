@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.expensetrackerfinalfull">
+
+    <application
+        android:allowBackup="true"
+        android:label="Expense Tracker"
+        android:icon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ExpenseTracker.M3">
+
+        <!-- Activities in your app package -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.expensetrackerfinalfull.ChartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.expensetrackerfinalfull.AddEditActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.expensetrackerfinalfull.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotUsernameActivity"
+            android:exported="false" />
+
+        <!-- Launcher -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- FileProvider for CSV export/sharing -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Budget setup screen (keep ONLY this, remove the old wrong package entry) -->
+        <activity
+            android:name="com.example.expensetrackerfinalfull.BudgetSetupActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

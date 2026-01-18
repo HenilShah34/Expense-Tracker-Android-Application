@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_export_csv"
+        android:title="Export CSV"
+        android:icon="@android:drawable/ic_menu_save" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@android:drawable/ic_menu_myplaces" />
+    <!-- NEW -->
+    <item
+        android:id="@+id/nav_budget_setup"
+        android:title="Budget Setup"
+        android:icon="@android:drawable/ic_menu_edit" />
+</menu>
